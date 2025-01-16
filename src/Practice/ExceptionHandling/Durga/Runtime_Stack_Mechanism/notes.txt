@@ -1,0 +1,8 @@
+Runtime-Stack-Mechanism:
+----------------------------
+
+For every thread JVM will create runtime stack....
+Each and every method() call made by thread, one entry will be stored in internal stack.
+That one entry of method() call in stack is called as Stack-Frame OR Activation-record.
+Once any particular method() got completed, then it's entry from Stack also gets deleted.
+After completing all the methods() then Stack and thread will be destroyed by JVM.

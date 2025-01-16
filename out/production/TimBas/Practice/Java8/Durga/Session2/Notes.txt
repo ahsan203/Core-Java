@@ -1,0 +1,23 @@
+
+Lambda Expression :
+--------------------
+1) The main reason of using "Lambda Expression" is to enable Functional Programming in Java.
+
+2) "Lambda-Expression" is just an Anonymous function with no-name, no-returnType, no-modifier.
+
+3)  "Lambda Expression" can only be used with @FunctionalInterface only.
+
+4) "Lambda-Expression" is just a concise way of implementing of abstract-method of @Functional Interface.
+
+
+@Functional Interface :
+------------------------
+1) @Functional Interface should contain only one SAM (single Abstract method()),
+   but can contain any number of default & static methods().
+
+
+
+Type-Inference :
+-----------------
+1) Based on the context, compiler will guess data-types of parameters of @Functional-Interface method, when using "Lambda-Expression".
+

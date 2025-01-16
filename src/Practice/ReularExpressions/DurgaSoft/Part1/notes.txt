@@ -1,0 +1,17 @@
+If we want to represent a group of String-Objects according to some patter, then we use Regular Expression.
+
+In Regular Expression we have 2 important classes from java.util.regex package:
+                                                                                (1) Pattern class
+                                                                                (2) Matcher class
+Important methods :
+-------------------------------------
+1)Pattern p = Pattern.compile("specify-pattern");
+2)Matcher m = p.matcher("Target-pattern");
+3)m.find()
+4)m.stat()
+5)m.end()
+6)m.group()
+
+
+
+

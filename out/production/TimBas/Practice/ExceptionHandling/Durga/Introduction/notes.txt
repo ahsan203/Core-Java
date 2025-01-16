@@ -1,0 +1,9 @@
+***) Exception:
+---------------------
+-> "An unwanted, unexpected event that disturbs the normal flow of program is Exception."
+
+1) To handle Exception's in Programs we use Exception-Handling.
+2) To stop the abnormal termination of Program, we use "Exception-Handling".
+
+
+

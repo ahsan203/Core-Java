@@ -1,0 +1,11 @@
+instanceof operator :
+------------------------
+syntax :     r instanceof X
+                                where r : object-reference
+                                      X : Name of class/interface
+
+
+***** Note : There should be relationship between r & X, like ParentChild. If not we will get compile-time-error. ******
+***** Note : "null instanceof X" is always false. *********
+
+1) Refer Example-1 for understanding the usage of instance-of operator.

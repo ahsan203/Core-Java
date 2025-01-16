@@ -1,0 +1,15 @@
+
+switch-Statement :
+--------------------
+
+1) In Java, you cannot directly use double, float, or long as the type of the expression in a switch statement.
+   switch statements only accept expressions that can be evaluated to an int, byte, short, char, or
+   their corresponding wrapper classes (Integer, Byte, Short, Character) along with "String".
+   This restriction is due to the way switch statements are implemented in Java,
+   where the value of the expression is used to determine which case to execute,
+   and the types of double, float, and long are not compatible with this mechanism.
+
+2) However, you can still use int, byte, short, or char expressions within a switch statement
+   to achieve similar functionality with double, float, or long values by converting them to compatible types.
+   For example, you could use type casting or rounding to convert double, float, or long values to int, byte, short, or char,
+   and then use these converted values in a switch statement.

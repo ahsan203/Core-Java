@@ -1,0 +1,4 @@
+Composition OR Aggregation :
+-----------------------------
+1) Composition OR Aggregation is also known as has-a relationship.
+2) We can use other class members in our class by using its object inside our class.

@@ -1,0 +1,12 @@
+Local-variables :
+------------------
+1) The variables which are declared inside a methods(), blocks, Constructors to meet temporary requirement are "Local-variable".
+2) "Local-variables" will be stored inside "stack-memory".
+
+3) For "Local-variables" JVM won't provide default values. So, it's mandatory to provide initialisation for "Local-variables".
+
+4) It is not recommended performing initialisation to "Local-variables" inside any logical-blocks like "if-else"...
+   It is highly recommended performing initialisation of "Local-variables" at the time of declaration, at least with the default-values.
+
+5) The only modifier applicable for "Local-variables" is "final".
+

@@ -1,0 +1,4 @@
+Data-Hiding:
+----------------
+1) By declaring variables as private, we can achieve Data-Hiding.
+2) The main advantage of Data-Hiding is security.

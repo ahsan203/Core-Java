@@ -1,0 +1,14 @@
+Comparable :
+--------------
+1) First we have to implement Comparable Interface and override compareTo() method, which compares 2 objects.
+2) But with compareTo() method, we can only compare one logic at a time.
+3) So to overcome this problem we use Comparator.
+
+
+Comparator :
+-------------
+1) We have to write separate classes which implements Comparator, such as IdComparator-class, NameComparator-class,....
+2) And we have to override compare methods().
+
+
+

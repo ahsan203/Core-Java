@@ -1,0 +1,8 @@
+***) Note:
+--> Inside try-block if an Exception is raised then the flow goes to catch-block, after completing corresponding catch-block
+    control wont go back to same try block.
+    So we should write only risky code in try-block......
+
+***) Note :
+            1) Exception can occur inside catch-block as well, so we can write try/catch inside catch-block.
+            2)

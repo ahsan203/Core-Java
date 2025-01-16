@@ -1,0 +1,13 @@
+Methods to print Exception-Message:
+---------------------------------------
+There are 3 methods in "Throwable-class" to print Exception-Messages :
+                                                                      1) e.printStackTrace()
+                                                                      2) e.toString()
+                                                                      3) e.getMessage()
+1) e.printStackTrace() : Prints complete Exception information.
+
+2) e.toString() : Prints only Name-of-Exception and Description.
+
+3)e.getMessage() : Prints only description.
+
+Note : By-default e.printStackTrace() will be called.

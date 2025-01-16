@@ -1,0 +1,67 @@
+Predicates :
+--------------
+ A predicate is a @FunctionalInterface with a SAM namely test(), with a single argument and returns boolean value.
+
+ To implement predicate functions in Java, Oracle people introduced Predicate interface in 1.8 version (i.e.,Predicate<T>).\
+
+ Predicate interface present in Java.util.function package.
+
+ It’s a functional interface, and it contains only one method i.e., test()
+
+Ex:
+                  interface Predicate<T> {
+                          public boolean test(T t);
+                  }
+
+                    "Here T is Type"
+
+As predicate is a functional interface and hence it can refer for "Lambda-Expression."
+
+      Note : "In our program wherever conditional-checking is there, we can use "Predicate-Functional-Interface" ."
+
+    Refer Test1.java, there we wrote multiple Example Programs by using Predicate.....
+
+ Predicate Joining :
+ --------------------
+
+1) We can join two Predicates together when required :
+                                                        P1.and(P2) --->  Both Predicate's should be TRUE.
+
+                                                        P1.or(P2) -----> Either one Predicate should be TRUE.
+
+                                                        P1.negate() ----> Negation.
+
+
+         Refer Test2.java program
+
+
+
+Program to display names start with 'K' by using Predicate :
+-------------------------------------------------------------
+Refer Test3.java
+
+
+
+Program to Remove null values & Empty-String from given List:
+--------------------------------------------------------------
+Refer Test4.java
+
+
+Program for User Authentication by using Predicate :
+-----------------------------------------------------
+Refer Test5.java
+
+
+Program to check whether Software-Engineer is allowed into Pub or not ?
+---------------------------------------------------------------------------
+Refer Test6.java
+
+
+Program Employee Management Application by Using Predicate :
+---------------------------------------------------------------
+Refer Test7.java
+
+
+Predicate Interface contains one static-method i.e. isEqual(T) :
+-----------------------------------------------------------------
+Refer Test8.java

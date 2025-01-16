@@ -1,0 +1,19 @@
+final vs finally vs finalize() :
+------------------------------------
+
+final:
+            1) It is an access-modifier, applicable for classes, methods(), variables.
+            2) If a class declared as final, then corresponding class cannot have child classes. (Inheritance not possible)
+            3) If a variable declared as final, then value of final-variable cannot be modified, it acts as constants.
+            4) If a method() declared as final, then child classes cannot override that final method().
+
+finally :
+            1) finally is block, associated with try/catch.
+            2) Inside finally block we write resource de-allocation code OR clean-up code.
+            3) finally-block executes always, irrespective of exception raised or not in program.
+
+
+finalize() :
+            1) finalize() is method associated with Garbage-Collector.
+            2) As we know if any object doesn't have any reference-variable than that object is eligible for Garbage Collector.
+            3) GC will call finalize() to perform clean-up activities, just before destroying an object.

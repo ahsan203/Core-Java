@@ -1,0 +1,5 @@
+Enum vs Switch :
+------------------
+
+1) As we know char, byte, short, int, Character, Byte, Short, Integer, String is only allowed with Switch statement.
+2) And form 1.5 version Enum is also allowed to use with switch-statement.

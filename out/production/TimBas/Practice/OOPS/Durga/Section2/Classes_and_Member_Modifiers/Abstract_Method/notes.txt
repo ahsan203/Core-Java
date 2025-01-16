@@ -1,0 +1,21 @@
+***) Abstract means partial-implementation...
+***) Abstract in java is applicable only on classes and methods() but not on variables.
+
+
+***) What is the need of Abstract-Methods.
+--> Sometimes when we know only partial-implementation about a method, then we can declare a method as an abstract.
+Syntax:
+---------------
+1) public abstract int getNoOfWheels();
+2) public abstract String getTaste();
+
+*****) And the implementation of the abstract methods will be given in their Child-Classes.
+
+Note:
+************** If a class contains at least one abstract-method then the class should declare as abstract-class. ******************
+abstract class Test
+{
+        public abstract void m1();
+}
+
+

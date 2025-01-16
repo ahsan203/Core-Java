@@ -1,0 +1,2 @@
+1) Every method() present inside an Interface is (public & abstract) till 1.7 version.
+2) If we don't declare Interface methods as public and abstract, it will

@@ -1,0 +1,4 @@
+Palindrome :
+-------------
+
+1) First reverse the number and then compare with given number.

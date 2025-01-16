@@ -1,0 +1,31 @@
+Java-8 Features :
+------------------
+                    1) Lambda Expression
+                    2) Functional Interfaces
+                    3) Default-Methods()  & static-Methods().
+                    4) Pre-defined Functional Interfaces :
+                                                            1) Function
+                                                            2) Predicate
+                                                            3) Consumer
+                                                            4) Supplier
+                                                            5) Runnable
+                                                            6) Callable
+                                                            7) etc....
+                    5) Double colon (::) operator, Method-Reference, Constructor-Reference.
+                    6) Streams
+                    7) Date and Time API
+                    8) Optional class
+                    9) Nashorn JavaScript Engine....
+
+
+1) Lambda-Expression : It is an Anonymous Function i.e. ( A function with no-name, no-returnType, no-modifier )
+--------------------
+Symbol to represent Lambda Function is ->
+
+Eg : ()-> { sout("Hello") }
+
+
+
+
+Function is interface introduced in java-1.8 to do Functional-Programming.
+

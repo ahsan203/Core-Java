@@ -1,0 +1,4 @@
+Hibernate :
+-----------
+1) It is a Java framework, it is an ORM(Object-Relational-Mapping) tool  to interact with DataBase.
+2) ORM simply means by using it, we map our class objects with DB table fields.

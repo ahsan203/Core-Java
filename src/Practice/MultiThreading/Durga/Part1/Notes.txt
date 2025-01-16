@@ -1,0 +1,12 @@
+What is MultiTasking :
+------------------------
+1) Executing different task simultaneously is Multitasking.
+2) There are 2 types of MultiTasking :
+                                       1) Process-based : Executing different task simultaneously, where each task is
+                                                          separate independent process. Eg: Operating-System
+                                       2) Thread-based : Executing different threads simultaneously, where each thread
+                                                         is a part of same program. Eg : Program-level usage.
+
+3) Wherever there is independent-jobs are there in our Program, we should identify and create separate thread.
+4) When compared with other Programming languages, developing MultiThread Program in java is easy as Java provide rich API,
+            Thread, Runnable, ThreadGroup ........

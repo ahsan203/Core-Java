@@ -1,0 +1,16 @@
+
+Lambda in java :
+-----------------
+
+1) Lambda in java is only applicable with @Functional-Interface.
+
+2) @Functional-Interface is the interface in which we have only one public abstract method().
+   Eg : Runnable, Callable, Comparable .....
+
+3) To call lambda we require @Functional-Interface.
+       Refer pack1 java programs.
+
+
+4) We can create Threads using lambdas...
+    Refer pack2
+

@@ -1,0 +1,6 @@
+finally block :
+------------------------
+-> "finally block code executes irrespective of try/catch"
+1) If a program terminates abnormally, then also finally block executes first after finally block program terminates abnormally.
+2) So we always write resource-deallocation OR clean-up code in finally block.
+

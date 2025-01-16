@@ -1,0 +1,2 @@
+***) If all the variables are declared as private, that class is Tightly-Encapsulated-Class.
+

@@ -1,0 +1,10 @@
+Enum with Inheritance :
+-------------------------
+
+1) All "enums" are direct child-class of Java.lang.Enum
+2) So enum cannot extend other enums
+3) As enum is final, so we cannot create child classes for enum
+
+Therefore, "extends" is banned for "ENUM".
+                But
+      An "ENUM" can implement Interfaces.

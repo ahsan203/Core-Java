@@ -1,0 +1,199 @@
+String-Class VS StringBuffer-Class :
+-------------------------------------
+
+  " Below all 3 cases will explain the differences b/w String & StringBuffer classes : "
+------------------------------------------------------------------------------------------
+
+
+
+case-1:  Difference between String & StringBuffer ?
+-----------------------------------------------
+We have concat() method for String.
+               &
+We have append() method for StringBuffer.    (Refer Example-1 java program)
+
+From above example-1 java program we can see that :
+                                                    "String" is "Immutable"
+                                                            and
+                                                    "StringBuffer" is "Mutable"
+
+    Once we create String-object, and after we perform some modification on that object, then a new object will be created
+    with that modification without disturbing the original existing String-object.
+    Therefore, "String" is "Immutable".
+
+
+
+
+case-2 : Difference between String & StringBuffer : == Operator VS equals() method :
+-------------------------------------------------------------------------------------
+
+== Operator is always meant for Reference Comparison,
+If 2 References pointing to the same object then only "==" will be True.
+
+***** very important ***** : As we know all classes are child-class of Object-class and in that we have "equals()" method.
+                             Object-class "equals()" method is meant for "Reference-Comparison".
+
+        In String class, the equals() method is overridden for "Content-Comparison".
+                                          BUT
+        In StringBuffer, the equals() method is not overridden for "Content-Comparison", So it still compares References.
+
+
+  Refer Example-2 Java Program to understand above points.
+
+
+
+
+case 3 : String Object creation : Heap & String-Constant-Pool(SCP) :
+-------------------------------------------------------------------------
+
+     String s1 = new String("Zaid"); ----> Here 2 objects will be created (one in Heap & one in SCP).
+               VS
+     String s2 = "Zaid"; ----> Here only one object will be created i.e. in SCP.
+
+
+SCP :
+---------
+            1)SCP : The main purpose of maintaining String literals is Re-usability.
+
+            2)SCP is also Heap Memory from 1.7-version.
+
+            3) Every new String literal will be created in SCP and maintained for future re-usability.
+
+      Note :  String Object creation @Compile-Time VS @Runtime :
+      -------------------------------------------------------------
+             Compile time objects will be created at SCP
+             Eg : String s1 = "Ahsan " + "Shareef Mohammed";
+
+                  s1 = "Constant" + "Constant" -------------> This will be created @Compile time in SCP
+
+
+             Runtime String objects will be created at Heap-Area memory.
+             Eg : String s1 = "Ahsan ";
+                  String s2 = s1 + " Shareef Mohammed.";
+
+                  s2 = Variable + Constant --------> This will be created @Runtime in Heap-Memory.
+
+
+
+
+
+ Importance of SCP :
+ --------------------
+ 1) In Java Applications, String objects are the most used objects.
+    Suppose in our application there are 1000 members whose city is "Chicago"
+    So instead of creating 1000 objects, Chicago will be created once in SCP
+    and all 1000 member's Reference variable will be pointing to "Chicago" literal in SCP.
+    In this way performance will be improved.
+
+
+
+                                    String literal VS String with new keyword :
+                                 --------------------------------------------------
+In Java, using string literals (i.e., strings declared without the new keyword) is generally preferred
+over creating strings with the new keyword. Here's why:
+
+However, there might be cases where using the new keyword to create strings is necessary or preferred,
+such as when you explicitly need a new string instance that is not interned in the string pool or
+when dynamically constructing strings based on runtime values.
+
+In summary, while both approaches are valid, using string literals is generally preferred
+for its readability, memory efficiency, performance, and adherence to Java conventions.
+
+
+
+
+Important FAQ's :
+-----------------
+
+Q1) Why SCP concept is available only for String object but not for StringBuffer ?
+
+-> The SCP (String Constant Pool) in Java is a memory area reserved for storing unique instances of string literals.
+   When you use string literals in your code, Java tries to reuse existing instances from the SCP rather than creating new ones.
+   This is done to conserve memory and improve performance.
+
+-> However, StringBuffer and its modern equivalent StringBuilder are mutable classes used for manipulating strings dynamically.
+   Unlike string literals, instances of StringBuffer and StringBuilder are mutable, meaning their contents can be modified after creation.
+
+-> Because of their mutable nature, instances of StringBuffer and StringBuilder are not suitable candidates for inclusion in the SCP.
+   If StringBuffer instances were allowed in the SCP, it would violate the immutability contract of strings stored in the pool.
+
+
+Q2) Why String objects are "Immutable" and StringBuffer objects are "Mutable"?
+
+-> Because of SCP Strings are "Immutable".
+
+
+Q3) In addition to String objects any other objects are Immutable in Java ?
+
+-> All Wrapper classes objects are also "Immutable".
+
+
+
+Important Constructors of String Class :
+------------------------------------------
+
+1) String s = new String();------------> Creates an empty String-Object in Heap-Area
+
+2) String s = new String( string-literal ); --------------> Creates an String-object in Heap-Area and literal in SCP.
+
+3) String s = new String (StringBuffer sb); ---------->
+
+4) String s = new String (StringBuilder sb);
+
+5) String s = new String (char[] ch);
+
+6) String s = new String (byte[] b);
+
+
+
+Important methods() of String class :
+-------------------------------------
+
+1) public char chatAt (int index)
+
+2) public String concat (String s)
+
+3) public boolean equals (String s)
+
+4) public boolean equalsIgnoreCase (String s)
+
+5) public boolean isEmpty()
+
+6) public int length()
+
+7) public String replace(char old_Char, char new_Char)
+
+8) public String substring(int begin); ---> It will return String from ( beginIndex.....TO....EndOfString )
+
+9) public String substring (int begin, int end); ----> it will return String from ( beginIndex....TO...end-1 String)
+
+10) public String trim() -----> It will eliminate spaces from beginning-&-end of the String. (Refer Example-5 java Program)
+
+11) public int indexOf (char ch)
+
+12) public int lastIndexOf (char ch)
+
+13) public String toUpperCase()
+
+14) public String toLowerCase()
+
+
+
+Creation of our own Immutable class :
+--------------------------------------
+Yes we can create our own Immutable class....
+Refer Test java program.....
+
+
+                            final VS Immutable :
+                        ---------------------------
+
+     Refer Test2 java program
+                                1) final is applicable for variable, reference-variable .....
+                                2) Immutable is applicable for objects only.
+
+
+
+
+
+

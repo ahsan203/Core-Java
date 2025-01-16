@@ -1,0 +1,27 @@
+FileWriter :
+-------------
+1) To write data to any file, we FileWriter class.
+
+2) Constructors :
+------------------
+There are 4 Constructors, 2 for "Over-writing" and 2 for "Append":
+
+1) FileWriter fw = new FileWriter(String fileName);
+2) FileWriter fw = new FileWriter(File f);
+
+3) FileWriter fw = new FileWriter(String fileName, boolean append);
+4) FileWriter fw = new FileWriter(String fileName, boolean append);
+
+3) Methods :
+-------------
+             1) write(int ch); ---> To write a single character.
+             2) write(char[] ch); ---> To write Array of characters.
+             3) write(String s); ---> To write Strings to file.
+             4) flush(); ---> To make sure total data has been flushed to our file.
+
+******** Note : The above all four methods() are available in all 3 "Writer-classes"
+                i.e. in "FileWriter", "BufferedWriter", "PrintWriter".
+
+4) The main disadvantage with FileWriter is we have to write "\n" everytime when we want new line.
+   We can solve this problem, by using "BufferedWriter" & "PrintWriter".
+

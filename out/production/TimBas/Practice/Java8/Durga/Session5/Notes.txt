@@ -1,0 +1,43 @@
+                           Default-methods() and static-methods() :
+                          -------------------------------------------
+-> Default-Methods :
+----------------------
+1) Until java 1.7 every method is always public abstract inside Interface, we cannot have concrete methods().
+   Therefore, it was Interface was considered as 100% pure abstract class.
+                                And
+2) Every variable present inside Interface is public static final.
+
+3) But from java 1.8 we can declare concrete-methods() also inside Interfaces which are known as "Default-methods()".
+
+4) For writing default-methods() inside Interfaces, we use "default" keyword.
+
+   Note : Here default is just a keyword for writing concrete-methods(), it won't act as a modifier.
+
+5) But there may be a chance of ambiguity problem, Suppose if multiple Interface has same default methods() and
+   a class which implements them may face diamond problem.
+
+6) We can solve above ambiguity problem in 2 ways :
+                                                    1) First way is @override the method() in child class and provide own implementation.
+
+                                                    2) Use Left.super.m1() OR Right.super.m1() OR use both.
+
+Refer pack1 java program to see ambiguity-problem when using default-methods inside Interfaces.
+
+Note : Still there are many differences b/w Interfaces with Default-Methods & Abstract-Class
+       Refer "Interfaces_AbstractClass.docx".
+
+
+-> static-methods :
+--------------------
+1) From Java-1.8 we can write static-methods inside Interfaces.
+
+2) The main purpose of writing static-methods inside Interfaces, is to define general-utility methods.
+
+3) These static-method of Interface can be called by any class i.e. A class which doesn't implement also can call these
+   static-methods using Interface name.
+
+4) There is only one way of calling static-method of Interface i.e. by using Interface name.
+
+5)    Refer Interf2.java program.
+
+6) As we can write static-methods inside Interfaces, therefore, we can also write "main-method" inside Interfaces.

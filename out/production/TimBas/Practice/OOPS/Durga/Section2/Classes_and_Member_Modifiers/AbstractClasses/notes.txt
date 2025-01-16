@@ -1,0 +1,13 @@
+****) Abstract-classes : Partial implemented class
+
+1) We cannot create object's directly to abstract-classes. (Instantiation of abstract-class is not possible)
+2) We cannot call any abstract-methods directly from abstract-classes.
+
+
+Abstract-class vs Abstract-methods :
+---------------------------------------
+
+1) If a class contains at least one abstract-method, then compulsory that class as abstract.
+2) Abstract class can contain 0 abstract-methods with other methods with empty bodies. example Adapter-class...
+It is highly recommended, to declare Adapter classes as abstract class.
+3)

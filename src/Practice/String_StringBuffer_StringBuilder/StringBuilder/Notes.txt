@@ -1,0 +1,11 @@
+
+StringBuilder :
+-----------------
+
+******** Note : All methods() of StringBuffer() are "synchronized". ************
+ So, only one thread will be allowed to use method at a time.
+ It is a thread-safe.
+ This will reduce performance. So for MultiThreaded environment we cannot use StringBuffer.
+ So in 1.5-version StringBuilder came.
+
+ So every method present in StringBuffer is present is StringBuilder but without "synchronized" keyword in methods().

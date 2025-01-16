@@ -1,0 +1,54 @@
+Anonymous Inner Classes :
+--------------------------
+1) Sometime we can declare Inner-Class without name, such type of Inner-Classes are called "Anonymous-Inner-Class".
+2) The main purpose of "Anonymous-Inner-Classes", is just for temporary use only.
+3) There are 3 types of Anonymous-Inner-Class :
+                                                1) Anonymous-Inner that extends a class
+                                                2) Anonymous-Inner-Class that implements an Interface
+                                                3) Anonymous-Inner-Class that defined inside an arguments
+
+
+4) Anonymous-Inner that extends a class :
+-----------------------------------------
+Syntax :
+            Example-1 : Popcorn p = new Popcorn()
+                        {
+
+                        }; ========> (Here we are creating an Anonymous-Inner-Object that extends a Popcorn-class).
+
+
+5) Anonymous-Inner-Class that implements an Interface :
+-------------------------------------------------------
+Example-1 :
+            Runnable r = new Runnable()
+            {
+
+            }; ========> (Here we are creating an Anonymous-Inner-Object that implements a Runnable-Interface).
+
+
+Refer Test1 java program.....
+Total 4 .class files got generated.....
+
+
+
+Defining a thread by extending a Thread-Class :
+------------------------------------------------
+1) Normal Approach :
+                        Refer ThreadDemo1.java
+
+2) Anonymous-Inner-Class-Approach :
+                                    Refer ThreadDemo2.java ....
+
+
+Defining a thread by Implementing Runnable-Interface :
+------------------------------------------------------
+1) Normal Approach :
+                        Refer RunnableDemo1.java
+
+2) Anonymous-Inner-Class-Approach :
+                                    Refer RunnableDemo2.java
+
+
+Anonymous-Inner-Class that define inside Arguments :
+----------------------------------------------------
+Refer Extra.java program....

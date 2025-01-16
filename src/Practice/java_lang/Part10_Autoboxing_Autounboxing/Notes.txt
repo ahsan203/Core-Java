@@ -1,0 +1,35 @@
+Autoboxing and Auto-unboxing :
+-----------------------------
+
+Autoboxing :
+------------
+1) Automatic conversion of "Primitive" to "Wrapper-object" by compiler is called "Autoboxing".
+Example :
+            Integer I = 10; --> [ Here compiler is converting int-to-Integer automatically known as "Autoboxing" ]
+
+2) Internally "valueOf()"  is implemented for Auto-boxing.
+
+Auto-unboxing :
+----------------
+1) Automatic conversion of "Wrapper-object" to "Primitive" by compiler is "Auto-unboxing".
+Example :
+              Integer I = Integer.valueOf(10);
+              int a = I; ---> [ Here compiler is converting Integer-to-int automatically known as "Auto-unboxing" ]
+
+2) Internally "xxxValue()" is implemented for Auto-unboxing.
+
+*************************************** Refer Test-1 java program **********************************************
+
+Note : We can directly assign "Primitive"-to-"Wrapper-object"
+------                                    and
+                               "Wrapper-object"-to-"Primitive"  with the help of "Autoboxing" & "Auto-unboxing".
+
+
+Note :
+-------
+1) In Test-2 java program, for the Case-4, Case-5, Case-7. If Objects content is same, it  will be pointing to same object -
+  -when doing Auto-boxing.
+
+2)
+
+

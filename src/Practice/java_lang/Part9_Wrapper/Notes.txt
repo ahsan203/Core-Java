@@ -1,0 +1,36 @@
+parseXXX() :
+-------------
+1) To convert "String" to "primitive" we use parseXXX();
+2) All Wrapper-classes except "Character-Class" contains "parseXXX" method() which is a static method().
+
+            Example-1 :
+                        int i1 = Integer.parseInt("12");
+                        System.out.println(i1);
+
+            Example-2 :
+                       double d1 = Double.parseDouble("12.3");
+                       System.out.println(d1);
+
+3) Refer parseXXX java program
+
+
+toString() :
+-------------
+1) We use toString() method to convert "Wrapper-object" OR "Primitive" to "String";
+2) All Wrapper-classes contains "toString()" method().
+
+    **** Refer toString() java program, where we have converted "Primitive" to "String" using "toString()";
+
+
+
+Conclusion :
+-------------
+                1) valueOf() : Converting  "Primitive" and "Strings" to "Wrapper-objects".
+
+                2) xxxValue() : Converting "Wrapper-objects" to "Primitives".
+
+                3) parseXXX() : Converting "Strings" to "Primitive".
+
+                4) toString() : Converting "Wrapper-objects" and "Primitive" to "Strings"
+
+ ***************** Refer Conclusion.java Program to understand the differences. **************************

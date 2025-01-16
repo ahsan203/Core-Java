@@ -1,0 +1,25 @@
+Method Local Inner Class :
+---------------------------
+1) Sometimes we can declare a class inside a method(), such type of Inner-Classes are called "Method-Local-Inner-Class".
+
+2) The main purpose of Method-Local-InnerClass is to define method-specific repeatedly required functionality.
+   Method-Local-InnerClass is the best suitable, to meet nested method requirements.
+
+3) We can access Method-Local-InnerClasses only within the method, only we declared.
+   Outside the method we can't access.
+
+4) Because of It's less scope, Method-Local_InnerClasses are most rarely used type of InnerClasses.
+
+5) Refer Test.java java program.
+
+6) We can declare Method-Local-InnerClasses inside both Instance-and-static methods.
+   But there is a small difference, i.e.
+   If we try to access "Instance-member" inside Inner-Class of a static-method, then we get Compile-Error.
+   Reason : As we know we can't access "Instance-member" directly inside a "Static-area".
+   But I think we can access "Instance-member" by creating its class-object inside "Static-area", and access through it.
+   Refer Test3 java program...
+
+7) Refer Test4 java program, where the explanation is done as below.....
+===>"We cannot access Local-variables of method() inside it's Inner-class, but if we make it final then we can access."...
+
+8)

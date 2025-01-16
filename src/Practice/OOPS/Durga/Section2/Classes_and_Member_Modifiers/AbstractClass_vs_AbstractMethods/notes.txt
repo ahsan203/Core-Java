@@ -1,0 +1,8 @@
+Abstract-class vs Abstract-methods:
+---------------------------------------------
+
+1) Child-classes is responsible to provide implementation to abstract-methods of abstract-class.
+2) If suppose abstract-class has 2 abstract-methods then compulsory child-class must provide implementation to all abstract-methods.
+
+When to use abstract-methods?
+***) Methods() which child-classes should provide implementation compulsory, such methods we should declare as abstract methods inside abstract-class.

@@ -1,0 +1,2 @@
+"Throwable class" & "Exception class" are the only 2 classes which are Partially Checked Exception.
+IOException, InterruptException classes are some Fully-Checked Exception classes.

@@ -1,0 +1,20 @@
+There are 2 packages which are not required to  import:
+1) java.lang
+2) cwd (Current-Working-Directory)
+
+Some classes present under java.lang package:
+1) String s = new String("Ahsan Shareef Mohammed");
+2) Thread t = new Thread();
+3) Exception e = new Exception();
+4) StringBuffer sb = new StringBuffer();
+
+Questions :
+-----------------
+(1Q) Pattern-Class?
+(A) Pattern Class is present inside java.util.regex.Pattern
+
+Which option to use for import when using Patter-Class.
+option-1) import.java.*; (wrong)
+options-2) import java.util.*;  (wrong)
+option-3) import java.util.regex.*; (correct)
+

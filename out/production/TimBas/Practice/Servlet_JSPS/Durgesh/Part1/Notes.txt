@@ -1,0 +1,26 @@
+Servlet and JSP :
+-----------------
+1) Servlet is simple java program which helps to
+   Send request to Client
+   and
+   Get response from Servers, vice-versa.
+
+2) Basically Client understands only html format, so the Server sends response to Client in HTML form.
+
+
+How to create Servlet :
+-----------------------
+1) First we have to implement Servlet Interface from javax.servlet package and override all its 5 methods().
+        Servlet has 5 methods :
+                            1) init()
+                            2) getServletConfig()
+                            3) service()
+                            4) getServletInfo()
+                            5) destroy()
+        Among above methods(), Lifecycle of Servlet contains 3 methods() :
+                                                                            1) init() :
+                                                                            2) service()
+                                                                            3) destroy()
+2) Second-step : We have to map the configuration of servlet in web.xml
+
+

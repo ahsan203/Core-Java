@@ -1,0 +1,48 @@
+Object-class:
+-------------
+1) Object class is considered as root of all java classes.
+2) Note : IF our class doesn't extend any other class then only our class is direct child-class of Object-class.
+          If our class extends any other class, then our class is indirect child-class of Object-class.
+          Conclusion : Either directly OR Indirectly, JAVA won't provide support for multiple-Inheritance.
+
+3) Object class defines the following 11 methods() :
+                                                     1) toString()
+                                                     2) hashCode()
+                                                     3) equals(Object o)
+                                                     4) finalize()
+                                                     5) getClass()
+                                                     6) clone()
+                                                     7) wait()
+                                                     8) wait(long m/s)
+                                                     9) wait(long m/s, int n/s)
+                                                     10) notify()
+                                                     11) notifyAll()
+
+4) Refer Example-1 java program to see number of methods() in Object class.
+   Note : Strictly speaking Object-class have 12 methods() i.e. registerNatives().
+          This method() internally required for Object class and not available for child-class,
+          Hence, we are not required to consider this registerNatives() method().
+
+
+toString() :
+-------------
+1) We use toString(), to get String-representation of an Object.
+-> Whenever we try to print any object-reference internally Object's class toString() method will be called.
+   Internally object will call toString() to get convert into String-representation.
+
+2) If our class doesn't contain toString() method(), then Object-class toString() method will be executed.
+
+-> And we try to print the object without overriding toString() then the output we get in below default format:
+Objects-class toString() will return getClass().getName()+"@"+Integer.toHexString(hashCode());
+
+->But to provide our own [meaningful String-representation] for every object we should @override toString().
+
+3) Refer Example-2 java program, where toString() method has been overridden.
+
+4) Note : In all Collection-classes, Wrapper-classes, String-class, StringBuffer & StringBuilder-class
+           toString() is overridden for[meaningful string-representation].
+
+-> So, whenever we try to print objects of Collection-classes, Wrapper-classes, String-class/StringBuffer/StringBuilder-class
+   we will get a proper meaningful output for their objects.
+   Hence, it is highly recommended overriding toString() method in our user-define classes.
+

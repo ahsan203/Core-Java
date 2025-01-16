@@ -1,0 +1,25 @@
+Enum : (Enumeration)
+--------------------
+1) If we want to represent a group of named constants under one name is called "enum".
+2) To define our own dataType like Month in below example we use enum concept.
+
+Example :
+            enum Month{
+                    Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+            }
+
+   1)  As in java we hava "byte" datatype which has range (-128 to 127).
+       Therefore, total 256 values are allowed when using byte dataType.
+
+   2)  But Month is our own dataType which allows 12 values.
+
+   3) Unlike other programming languages, Java's enum can contain (normal-variables, constructors(),....) along with constants.
+
+
+
+   Internal Implementation of Enum :
+ --------------------------------------
+ 1) Every enum internally gets converted  into class in java.
+ 2) The enum constants are public-static-final.
+ 3) Every enum-constant represents as an object of that enum.
+

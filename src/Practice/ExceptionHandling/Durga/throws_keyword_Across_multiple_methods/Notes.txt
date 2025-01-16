@@ -1,0 +1,5 @@
+throws_keyword_Across_multiple_methods :
+-------------------------------------------
+We have to use "throws" keyword on the method() in which Checked-Exception may occur.
+                        And
+Also we have to use "throws" keyword on the caller of the method(). Refer Example1.java program

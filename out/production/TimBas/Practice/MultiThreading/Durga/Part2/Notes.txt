@@ -1,0 +1,77 @@
+In how many ways we can define Thread :
+                                        1) By extending Thread-Class.
+                                        2) By implementing Runnable-Interface.
+
+By extending Thread-Class :
+-----------------------------
+1) Note : By-default every java program contains one thread i.e. Main-Thread.
+2) We should override a run() method and give our job in it.
+3) Refer Example-1 java program.
+4) start() method starts the thread.
+5) Output order of thread's we can't guarantee, it depends on "Thread-Scheduler" of JVM.
+   Some JVM follow FCFS, some follow Round-Robin.......
+
+
+Thread-Scheduler:
+------------------
+1) If we want to start a thread, we call start() method.
+2) Whenever we call start(), Thread-class start() method will be executed, and
+   Internally Thread-class start() will be calling run().
+
+
+t.start() vs t.run() :
+---------------------
+-> If we just call run() method then separate thread won't get created. It acts as normal method call.
+                                                    But
+->If we use start() method, then separate thread will be created.
+-> start() method causes a thread to begin execution; the Java Virtual Machine calls the run method of this thread.
+   Internally Thread-class start() will be calling run().
+
+Importance of start():
+-----------------------
+1) It will register this thread on Thread-Scheduler.
+ Hence, there is no-chance of starting a new thread without using start().
+2) Internally start() will call run() of that particular thread.
+
+
+OverLoading of run() :
+------------------------
+1) OverLoading of run() is possible, but start() will always call no-arg run().
+2) Refer Example-2 java Program.
+
+Overloading of main():
+-----------------------
+1) Overloading of main() method is possible but JVM always call main(String[] args) only.
+2) Refer Example-3 java Program.
+
+Not overriding run():
+----------------------
+1) If we didn't override run() method, then Thread-class run() method will be executed, which has empty implementation.
+   Hence, in that case we don't get any output.
+2) It is highly recommended overriding run(), otherwise don't go for MultiThreading concept.
+
+Overriding start() :
+-----------------------
+1) If we override start() method, then start() method of Thread-class will not get any chance.
+    And our start() method will execute just like a normal method() call.
+    And no new thread will be created.
+2) It is not recommended overriding start(), otherwise don't go for MultiThreading concept.
+3) If we override start() and in that if we call super.start(), then new thread will be created. Refer Example-4 java Program.
+
+
+Thread life-cycle :
+---------------------
+1) MyThread t = new MyThread(); ---------------> New-State
+
+2) t.start(); ----------------> Ready-State
+
+3) t.run(); -----------------> Running-State
+
+4) ------------------------> Dead-State
+
+
+IllegalThreadStateException :
+--------------------------------
+1) If we restart the same thread, we will get Runtime-Exception i.e. "IllegalThreadStateException".
+2) Refer Example-4 line-22, uncomment and run the program.
+

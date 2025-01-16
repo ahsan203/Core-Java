@@ -1,0 +1,31 @@
+Implicit-TypeCasting :
+------------------------
+1) Compiler converting Smaller-Data-Type value to Bigger-Data-Type value is "UpCasting" OR "Widening".
+
+Example : int x = 'a';
+          sout(x); //97 -------------> ( Internally compiler converts char-to-int automatically by Implicit-TypeCasting)
+
+          double d =10;
+          sout(d); //10.0 ----------> (Internally compiler converts int-to-double automatically by Implicit-TypeCasting)
+
+
+                                  byte--->short---->int--->long---->float--->double
+                                          char----->int
+
+*** "Hence, assigning Smaller-Data-Type value to Bigger-Data-Type is allowed, and internally taken care by compiler."***
+
+2) Explicit-TypeCasting :
+--------------------------
+1) Whenever we are assigning Bigger-Data-Type value to Smaller-Data-Type value
+   then Explicit-TypeCasting is required by the programmer.
+
+2) Converting Bigger-Data-Type value to Smaller-Data-Type value is "Down-Casting" OR "Narrowing"
+
+3) There may be a chance of "loss of information" in "Explicit-TypeCasting".
+
+Example : int x =130;
+          byte b = (byte) x;
+          sout(b); //-126 -----> (We will get "Loss of Precision" answer as we are doing "Implicit-TypeCasting")
+
+
+************* Refer Example-1 java program for "Implicit-TypeCasting"  &  "Explicit-TypeCasting".  *******************

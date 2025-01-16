@@ -1,0 +1,28 @@
+
+
+Object-class Methods (11) :
+--------------------------
+                        1) public String toString()
+
+                        2) public int hashCode()
+
+                        3) public boolean equals(Object o)
+
+                        4) public final Class getClass()
+
+                        5) protected void finalize()
+
+                        6) public Object clone()
+
+                        7) public void wait()
+
+                        8) public void wait(long m/s)
+
+                        9) public void wait(long m/s, int n/s)
+
+                        10) public void notify()
+
+                        11) public void notifyAll()
+
+
+

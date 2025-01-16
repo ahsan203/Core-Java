@@ -1,0 +1,32 @@
+3 Mantras of Object Type Casting :
+------------------------------------
+syntax :  A b =(C) d;
+                      compile-time check-1 : 'C' and 'd' should have some relation, either Parent-to-Child OR Child-to-Parent.
+                                             If there is no-relation b/w 'C' and 'd' then we will compile-time-error.
+
+                      compile-time check-2 : 'C' should be same as 'A' class type
+                                                   OR
+                                             'C' should be child of 'A',  otherwise we will get compile-time-error.
+
+                      JVM-Runtime-check-1 : "Runtime-object" of 'd' must be same as 'C' OR child of 'C'.
+                                             otherwise, we will get run-time error.
+
+
+   Example :    Object o = new String("Ahsan");
+                StringBuffer sb = (StringBuffer) o;
+
+                check-1 : 'o' and StringBuffer relation is there.
+                check-2 : 'StringBuffer' is same as 'StringBuffer'.
+                check-3 : Runtime object of 'o' is String and StringBuffer is not same as String neither its Parent.
+                          Therefore, we will get Runtime-Exception......
+
+2) Refer case-1 from Example-1 java program.
+
+
+
+
+
+
+
+
+

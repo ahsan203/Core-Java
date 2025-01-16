@@ -1,0 +1,24 @@
+
+Factory-Design-Pattern :
+-------------------------
+1) In Java, the Factory Design Pattern typically involves defining an interface or an abstract class representing the product,
+   and then creating one or more concrete classes that implement or extend this interface or abstract class.
+
+2) Additionally, a factory class or method is created to instantiate and return instances of these concrete classes
+   based on certain criteria or parameters.
+
+3) In our Example :
+                    Interface = Employee
+             Concrete-Classes = AndroidDeveloper.java & WebDeveloper.java
+                Factory-Class = EmployeeFactory.java
+                Client-Class  = Developer-Client
+
+
+    Advantages :
+------------------
+1) Here we focus on creating object for Interface rather than creating objects directly to Child-Classes.
+
+2) By this we have achieved "Loose-Coupling".
+
+
+

@@ -1,0 +1,20 @@
+Name : Ahsan Shareef Mohammed
+Age : 28 
+City : Bloomingdale
+int value : 12
+double value : 23.4
+float value : 12.3
+-----------------------------------------
+Name : Shoeab Ullah Ansari
+Age : 28
+City : Hyderabad
+int value : 12
+double value : 23.4
+float value : 12.3
+-----------------------------------------
+Name : Zaki Rana
+Age : 27
+City : Melbourne
+int value : 12
+double value : 23.4
+float value : 12.3

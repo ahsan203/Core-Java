@@ -1,0 +1,3 @@
+Speciality of ENUM in Java :
+----------------------------
+                             1) We can write main() and execute Enum directly.

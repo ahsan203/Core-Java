@@ -1,0 +1,6 @@
+Encapsulation :
+-----------------------
+The process of grouping data-members(variables-and-methods()) together inside a class is Encapsulation.
+classes in java is an example of Encapsulation.
+
+Encapsulation = Data-hiding + Abstraction

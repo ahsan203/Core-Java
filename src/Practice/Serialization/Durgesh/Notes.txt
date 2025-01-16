@@ -1,0 +1,13 @@
+
+Serialization :
+---------------
+                1) The process of converting state of an "Object" into Byte-Stream.
+
+                2) By doing this, we can store object into Databases, Files, Network.......
+
+Deserialization :
+------------------
+                 1) Reverse Process of Serialization.
+
+Refer "package-Durga-Notes.txt".........
+

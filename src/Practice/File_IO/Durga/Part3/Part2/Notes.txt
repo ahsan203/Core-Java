@@ -1,0 +1,32 @@
+Usage of FileWriter and FileReader is not recommended because :
+1) With FileWriter we have to manually \n line separator. it is time-consuming
+2) With FileReader we can read data character-by-character, which is time-consuming
+3) To overcome above problems we have :
+                                        1) BufferedWriter :
+                                        --------------------
+                                         Special method : We have bw1.newLine() method for line-separator.....
+
+                                        2) BufferedReader :
+                                        --------------------
+                                        Special method : We have readLine() method  for reading whole line......
+
+BufferedWriter :
+-----------------
+1) To write character-data into File.
+
+FileWriter fw1 = new FileWriter("fileName");
+BufferedWriter bw1 = new BufferedWriter(fw1);
+
+Note : BufferedWriter can only be used with FileWriter object.
+       Refer Test-1 java program...
+
+BufferedReader :
+----------------
+1) To read character-data from File. It overcomes the problem of FileReader.
+2) We can read data line-by-ine in addition to character-by-character.
+
+FileReader fr1 = new FileReader("fileName");
+BufferedReader br1 = new BufferedReader(fr1);
+
+Note : BufferedReader can only be used with Reader object.
+        Refer Test2 java program

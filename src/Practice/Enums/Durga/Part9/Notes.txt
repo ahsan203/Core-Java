@@ -1,0 +1,14 @@
+
+
+                                  enum vs Enum vs Enumeration :
+                              ------------------------------------
+
+            1) enum : It is a keyword in JAVA, to define a group of named constants.
+
+            2) Enum : It acts as Parent-class for Java enums, and
+                      It is class Present in java.lang package.
+
+            3) Enumeration : It is an interface, present in java.util package.
+                             It is related Collection...
+
+                             If we want collection-objects one-by-one from collection we use Enumeration.

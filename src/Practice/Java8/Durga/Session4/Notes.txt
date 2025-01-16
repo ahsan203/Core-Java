@@ -1,0 +1,16 @@
+
+
+
+1)  !!!!!Important Note : Anonymous_InnerClass != Lambda_Expression
+
+2) Lambda Expressions can be converted into Anonymous-Inner Class
+                        But
+   Not all Anonymous-Inner classes can be converted into Lambda-Expressions.
+
+3) this keyword in Anonymous-Inner Class is considered for current-Anonymous-Inner-class instance-object
+                                    But
+   this keyword in Lambda-Expression is refers to current-class-outer-object
+
+4) Refer pack1 java Programs.
+
+5) Refer Anonymous_vs_Lambda.docx document to see differences.

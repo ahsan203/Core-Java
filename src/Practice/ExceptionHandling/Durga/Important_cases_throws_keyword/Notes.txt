@@ -1,0 +1,3 @@
+
+-> "thorws" keyword is applicable for methods() & Constructors.
+-> Note : "We cannot use throws keyword on className", we will get Compile-time error.

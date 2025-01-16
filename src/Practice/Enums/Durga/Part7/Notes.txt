@@ -1,0 +1,18 @@
+
+                        ENUM vs Constructor :
+                    ---------------------------
+
+            1) Enum can contain Constructor.
+            2) But if we have 3 constants in our ENUM, then 3 times Constructor() will be executed.
+
+            public enum Beer
+            {
+                KF(100),KO(75),RC(90),FO;
+
+
+            KF ---->  Internally it is same as :
+                                                 public static final Beer KF = new Beer();
+
+            KF(100) ----> Internally it is same as :
+                                                     public static final Beer KF = new Beer(100);
+

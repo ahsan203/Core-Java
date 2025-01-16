@@ -1,0 +1,17 @@
+Checked Exceptions vs Unchecked Exceptions :
+---------------------------------------------------
+Checked-Exception:
+----------------------
+-> The Exceptions which are checked by the compiler whether programmer is handling it or not, then these Exceptions
+are known as Checked-Exceptions.
+Examples : FileNotFound-Exception, InterruptedExceptions........
+
+UnChecked-Exception:
+-------------------------
+-> Exception which are not checked or alerted by compiler and occur at Runtime, those are Unchecked-Exceptions.
+Examples : ArithmeticException
+
+
+***) Note : "Error" and its Child classes are Unchecked.
+            "Runtime-Exception" and its child classes are Unchecked-Exceptions, remaining all other Exceptions are CheckedExceptions.
+

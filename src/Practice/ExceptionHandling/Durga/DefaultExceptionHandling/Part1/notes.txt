@@ -1,0 +1,3 @@
+Default-Exception-Handling:
+--------------------------------
+--> If we don't have any Exception-Handling mechanism in our Program, then it is known as "Default-Exception-Handling".

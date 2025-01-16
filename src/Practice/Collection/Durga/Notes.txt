@@ -1,0 +1,130 @@
+Arrays vs Collections :
+---------------------------
+1) Arrays are :
+                1) Fixed-in-Size
+                2) Homogeneous only
+                3) No underlying Data-Structures.
+2) The above problems can be solved by using Collections Framework.
+
+3) But among both Arrays is recommended when we know exact size.
+   As Arrays has better performance compared to Collections Framework.
+
+4) Arrays can hold both Primitives and Objects.
+                But
+   Collections can hold only Objects.
+
+5) Collection : If we want to represent a group of individual Objects as a single entity then we go for Collection,
+
+6) Collection Framework :
+--------------------------
+Collection Framework contains several classes and interfaces which can be used to hold individual objects as single entity,
+
+
+                               9 Key Interfaces of Collection Framework :
+                        -----------------------------------------------------
+                         1) Collection
+                         2) List
+                         3) Set
+                         4) SortedSet
+                         5) NavigableSet
+                         6) Queue
+                         7) Map
+                         8) SortedMap
+                         9) NavigableMap
+
+
+     1) Collection(I) : Collection interface contains the  most common methods() like ( add(), remove ()....) for all Collection Framework.
+                        It is the root Interface for all Collection Framework except Map(I).
+
+
+
+                                             Collection vs Collections :
+                                    ---------------------------------------------
+                                   ->Collection is an interface, and we have discussed in above points.
+                                   ->Collections is a class which provides several utility methods() like ( sort ....)
+
+
+
+     2) List(I) :  It is a child interface of Collection(I).
+                   If we want duplicates, and insertion-order then we use List(I).
+
+              Implementation classes :
+                                        1) ArrayList
+                                        2) LinkedList
+                                        3) Vector
+                                        4) Stack
+
+     3) Set(I) : If we don't want Duplicates & No-Insertion-order then we use Set(I)
+
+                Implementation classes :
+                                         1) HashSet
+                                         2) LinkedHashSet
+
+
+     4) SortedSet(I) : If we don't want Duplicates, but we want objects should be inserted with some Sorting Order.
+
+     5) NavigableSet(I) :   It is child Interface of SortedSet(I).
+                                            And
+                            This contains several methods() for Navigation purposes.
+
+                        Implementation class :
+                                                1) TreeSet
+
+
+     6) Queue(I) : " Prior-To-Processing ", meaning when we want First->In->First->Out order we use Queue(I).
+                    We can also process objects based on priority-based by using PriorityQueue class.
+
+                        Implementation class :
+                                                1) PriorityQueue
+                                                2) BlockingQueue
+                                                                    1) PriorityBlockingQueue
+                                                                    2) LinkedBlockingQueue
+                                                3) Deque
+
+
+     7) Map(I) : To represent objects in key-value pairs.
+
+                 Note : It is not a child Interface of Collection(I).
+
+                 Both keys and values both are objects.
+
+                 Rule : Duplicate key are not allowed
+                            But
+                        Duplicate values are allowed.
+
+                 Implementation classes :
+                                           1) HashMap
+                                           2) LinkedHashMap
+                                           3) WeakHashMap
+                                           4) IdentityHashMap
+                                           5) Hashtable
+
+     8) SortedMap(I) : When we to represent key-value pairs according to some sorting-order of keys.
+
+                       In SortedMap(I), sorting will be based on keys, but not based on values.
+
+
+     9) NavigableMap(I) : It is a child-interface of SortedMap(I)
+                           It has methods() for navigation purposes.
+
+                         Implementation class :
+                                                1) TreeMap
+
+
+
+
+
+
+     For Sorting we have 2 Interfaces :
+                                        1) Comparable(I) : For DFNSO
+                                        2) Comparator(I) : Customized Sorting
+
+
+     Cursors : When we want elements one-by-one
+                                                      1) Enumeration(I)
+                                                      2) Iterator(I)
+                                                      3) ListIterator(I)
+
+     Utility classes :
+                        1) Collections
+                        2) Arrays

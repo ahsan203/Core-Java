@@ -1,0 +1,11 @@
+***) Note:
+------------
+1) We can use try-block without catch-block, but we have to use finally-block.
+2) Without writing either catch-block OR finally-block we cannot use try-block.
+3) In try-catch-finally, order is very important.
+4) Alone catch-block without try-block is not allowed.
+5) Alone finally-block without try-block is not allowed.
+6) As for one try-block we can take multiple catch-blocks,
+            But
+   for one try-block we can take only one finally-block.
+7) Curly-braces is mandatory for try-catch-finally blocks, even for writing one-statement also Curly-Braces is mandatory.

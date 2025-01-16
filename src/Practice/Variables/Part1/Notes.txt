@@ -1,0 +1,66 @@
+ Types of Variables :
+---------------------
+
+Division -1 :
+--------------
+               1) Primitive-variables :
+                  Example: int x =10;
+
+               2) Reference-variables :
+                  Example : Student s = new Student();
+
+
+Division -2 :
+-------------
+                1) Instance-variables
+                2) static-variables
+                3) Local-variables
+
+1) Instance-variables :
+------------------------
+1) If the value of variables is varied from object-to-object, such type of variable are called "Instance-variables".
+
+2) For every object a separate copy of "Instance-variable" is created.
+
+3) It should be declared with-in class directly, outside of methods() OR block OR Constructor.
+
+4) Instance variable will be created at the time of object-creation, and destroyed at the time of object-destruction.
+   Hence, scope of "Instance-variables" is same as scope of objects.
+
+5) As we know objects are stored in "Heap-memory". And "Instance-variables" scope is same and related to object of class.
+   Therefore, "Instance-varibales" are stored in "Heap-Memory".
+
+6) We can't access "Instance-variables" from "static-area", but we can access by using "reference-area".
+
+7) "Instance-variables" are also known as "object-level-variables".
+
+
+
+2) static variables :
+---------------------
+1) If the value of variable is not varied from "object-to-object", such variable is not recommended declaring variables
+   as "Instance-variables". We have to declare such type of variables at Class-level by using static-modifier.
+
+2) For static variables only one copy will be created at Class-level.
+
+3) It should be declared with-in class directly, outside of methods() OR block OR Constructor.
+
+4) "static-variable" will be created : At the time of Class-Loading
+   "static-variables" will be destroyed : At the time of Class-Unloading.
+    Scope of "static-variables" is exactly same as scope of ".class" file.
+
+5) "static-variables" can be accessed either by using :
+                                                        1) Object-reference
+                                                        2) ClassName.static-variable
+                                                        3) directly also if we are in same class
+    Note : Recommended to use ClassName.static-variable.
+
+6) We can access "static-variables" from both "static-area" and "Instance-area".
+
+7) "static-variables" are also known as "Class-level-variables".
+
+Refer Test-1 java program for understanding "Instance-variables" and "static-variables".
+
+
+
+

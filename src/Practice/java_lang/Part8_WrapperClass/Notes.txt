@@ -1,0 +1,110 @@
+Wrapper-Class :
+----------------
+1) Basic purpose : "The main objective of Wrapper-Class are":
+-------------------------------------------------------------------
+  1) To wrap primitive into object form, so that we can handle primitive also just like objects.
+  2) To define several utility methods() which are required for primitive variables.
+  3) There are 8 Wrapper-Classes :
+                                  1) Byte  2) Short  3) Integer  4) Long  5) Float  6) Double  7) Character  8) Boolean
+
+******************** Note : All Wrapper-Class-objects  are "Immutable" like "String". ********************************
+
+
+2) Constructors of Wrapper-Class :
+----------------------------------
+--> "Almost all Wrapper-Classes contains two Constructors"
+--> "One Constructor will take corresponding primitive as argument"
+                and
+     "Other Constructor can take string as argument". But If the string argument not representing number then,
+      we will get "Runtime-Exception" i.e. "NumberFormatException". Refer Example-3 below.
+
+    Example-1 : Integer I1 = new Integer(10);
+                Integer I2 = new Integer("100");
+
+    Example-2 : Double d1 = new Double(12.2);
+                Double d2 = new Double("12.2")
+
+    Example -3 : Boolean b1 = new Boolean(true);
+                 Boolean b2 = new Boolean("false");
+
+    Example-4 : Integer i3 = new Integer("ten");-------> "NumberFormatException"
+
+---> But Float-Class contains three Constructors :
+                                                    1) One Constructor takes float argument.
+                                                    2) Second Constructor takes string argument.
+                                                    3) Third Constructor takes double argument.
+
+         Example-5 : Float f1 = new Float(12.3f);
+                     Float f2 = new Float("12.3f");
+                     Float f3 = new Float(12.3);
+                     Float f4 = new Float("12.3");
+
+----> Character-class contains only one-Constructor :
+                                                      1) Only one Constructor which can take "char" as argument.
+
+         Example -6 : Character ch = new Character('a');
+
+
+Boolean-Class :
+-----------------
+                        Boolean b1 = new Boolean("TRue");
+                        System.out.println(b1); //----- true
+
+                        Boolean b2 = new Boolean("Ahsan");
+                        System.out.println(b2); //--------- false
+
+3) In all Wrapper-Classes, toString() method is overridden to return content directly
+                                                    and
+                           .equals() method is overridden for content-comparison.
+
+4) Utility-methods() of Wrapper-Classes :
+------------------------------------------
+                                                1) valueOf();
+                                                2) xxxValue();
+                                                3) parseXXX();
+                                                4) toString();
+
+
+
+
+1) valueOf() :
+--------------
+1) We can use "valueOf()" methods to create Wrapper object for the given "primitive" OR "String".
+2) It is an alternative of creating Wrapper-objects.
+3) It is a static method present in all Wrapper-Classes.
+
+            Traditional-way : Integer i1 = new Integer(10);
+     Using valueOf() method : Integer i2 = Integer.valueOf(10);
+
+    Examples :
+                          Integer I = Integer.valueOf(10);
+                          Double d = Double.valueOf("10.4");
+                          Boolean b = Boolean .valueOf("True");
+
+    Note : Traditional-way of creating Wrapper-objects have been deprecated. Always recommended to use valueOf().
+
+
+2) xxxValue() :
+----------------
+1) We can use xxxValue() methods, to convert "Wrapper-objects"-to-"Primitive".
+
+            Example-1 :
+                        Integer i1 = Integer.valueOf("10");
+                        System.out.println(i1);
+
+                        int a = i1.intValue();
+                        System.out.println(a);
+
+            Example-2 :
+                        Character c = Character.valueOf('a');
+                        System.out.println(c);
+
+                        char c1 = c.charValue();
+                        System.out.println(c1);
+
+
+
+3)
+
+
+

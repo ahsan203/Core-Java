@@ -1,0 +1,9 @@
+***) Interface:
+---------------------
+-> Any Service-Requirement-Specification(SRS) for application is Interface.
+
+1) Every method() by-default is pubic-abstract, if we declare it or not. (Ignore this definition)
+2) From 1.8 default & static methods() are allowed in Interfaces.
+3) From 1.9 private methods() are also allowed inside Interfaces.
+
+

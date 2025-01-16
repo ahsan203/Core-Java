@@ -1,0 +1,17 @@
+FileReader class:
+-----------------
+1) To read character data from file, we use FileReader class.
+
+2) Constructors :
+------------------
+1) FileReader fr = new FileReader(String fileName);
+
+2) FileReader fr = new FileReader(File f);
+
+
+3) Methods :
+-------------
+                1) read(); ----> Reads only one-character.
+                2) read(char[] ch) -----> Read array of characters.
+                3) close(); -->
+

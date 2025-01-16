@@ -1,0 +1,26 @@
+The Optional class in Java is commonly used to handle potential null values. Here are its most commonly used methods in short:
+
+of(): Creates an Optional with a non-null value.
+ofNullable(): Creates an Optional that can contain a null value.
+empty(): Creates an empty Optional.
+isPresent(): Checks if a value is present.
+isEmpty(): Checks if a value is absent (Java 11+).
+get(): Retrieves the value, throws an exception if empty.
+ifPresent(): Executes a function if the value is present.
+orElse(): Returns the value or a default if empty.
+orElseGet(): Returns the value or computes a default if empty.
+orElseThrow(): Throws an exception if the value is empty.
+map(): Transforms the value if present, returning a new Optional.
+flatMap(): Like map() but avoids nested Optionals.
+filter(): Returns the Optional if the value matches a condition, or empty.
+These methods help avoid NullPointerException and encourage functional programming practices.
+
+Among the 13 methods in the Optional class, the most commonly used methods are:
+
+ofNullable(): Frequently used to create an Optional that can handle null values.
+isPresent(): Used to check if the value exists before performing operations.
+orElse(): Provides a default value if the Optional is empty.
+orElseThrow(): Common for throwing exceptions when a value is absent.
+ifPresent(): Executes a block of code if the value is present.
+map(): Used for transforming the value while maintaining the Optional wrapper.
+These methods are the most practical and widely used in day-to-day programming.

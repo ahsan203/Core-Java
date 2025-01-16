@@ -1,0 +1,33 @@
+File I/O classes :
+-------------------
+                        1) File
+                        2) FileWriter
+                        3) FileReader
+                        4) BufferedWriter
+                        5) BufferedReader
+                        6) PrintWriter
+
+1) File class :
+-----------------
+1) To create a new "files" OR "folders", we have instance-methods in File class:
+                                                                                   1) f.createNewFile();
+                                                                                   2) f.mkdir();
+2) Refer Example-1 java Program....
+
+
+2) File class Constructors :
+------------------------------
+1) File f = new File(String fileName); --------------------------------> If we want file to be created/updated in same directory.
+2) File f = new File(String sub-directory-name, String  FileName);-----> If we file to be created/updated in different directory.
+3) File f = new File(File sub-directory-reference, String fileName);----> If we file to be created/updated in different directory.
+
+4) Refer Example-2 java program, to understand above 3 constructors....
+
+
+3) Important methods() in File class :
+--------------------------------------
+                                        1) f.list(); ---> List out all "fileNames" & "folderNames" available in given folder.
+                                        2) f.length(); ---> Will give the number of characters in given "file".
+                                        3) f.delete(); ---> Deletes the File/Folder.
+                                        4) f.isFile(); ---> Returns true, if the specified file-object pointing to physical-file.
+                                        5) f.isDirectory(); ---> Returns true, if the specified file-object pointing to physical-folder.

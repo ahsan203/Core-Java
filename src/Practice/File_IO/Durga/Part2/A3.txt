@@ -1,0 +1,19 @@
+Name : Shoeab Ansari.
+Roll : 7018
+ Name : Ahsan Shareef Mohammed.
+Roll : 7027
+Name : Zaki Rana.
+Roll : 7035
+Name : Nomaan.
+Roll : 7040
+Gender : Male----------------------------------
+
+Name : Nomaan.
+Roll : 7040
+Gender : Male----------------------------------
+----------------------------------
+
+Name : Nomaan.
+Roll : 7040
+Gender : Male
+----------------------------------

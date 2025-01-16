@@ -1,0 +1,43 @@
+Synchronization :
+------------------
+****** "Synchronized is a modifier applicable only for methods() & blocks, but not variables and classes."
+****** "We can have Synchronized methods() & Synchronized blocks."
+
+1) If multiple threads trying to operate simultaneously on the same java object,
+   then there may be a chance of data inconsistency problem,
+   to overcome this problem we should us "synchronized" keyword.
+
+2) If a method() OR block is declared as "synchronized", then at a time only one thread is allowed to execute that
+   method() OR block on the given object. So that data Inconsistency problem will be resolved.
+
+3) Eg : Bank joint a/c, Booking online movie tickets, .......
+
+4) The main advantage "synchronized" keyword is we can resolve data-inconsistency problems,
+                    But
+    The main disadvantage of "synchronized" keyword is it increases waiting time of threads and create performance problem.
+    Hence, if there is no specific requirement, then it is not recommended "synchronized" keyword.
+
+5) Internally "Synchronization" concept is implemented by using lock, Every Object in Java has a unique lock.
+   Whenever we are using "Synchronized" keyword then only lock concept come into effect.
+
+6) If a thread wants to execute "Synchronize" method() on the given Object, first it has to get lock of that Object.
+   Once thread got the lock, then it is allowed to execute any "Synchronize" method() on that Object.
+   Once "synchronized" method() execution completes, automatically thread releases the lock.
+   Acquiring and Releasing the lock, internally takes care by JVM.
+
+7) While a thread executing "Synchronize" method() on the given Object, the remaining threads are not allowed to execute
+   any "Synchronize" method() simultaneously on the same Object.
+   But remaining threads are allowed to execute "non-synchronized" methods() simultaneously.
+
+8) In java every Object have 2 areas :
+                                        1) Synchronized-Area
+                                        2) Non-Synchronized-Area
+        1) Synchronized-Area : This area of object can be accessed by only one-thread @ a time.
+                              Whenever we have any (create,update,delete) related methods(), where state of object changes
+                              we write it as "Synchronize" method().
+
+        2) Non-Synchronized-Area : This area of Object can be accessed by  multiple threads simultaneously.
+                                    Whenever we have any (read) related methods(), where state of object won't change
+                                    we write it as normal method() i.e. "non-synchronized".
+
+9) Refer Display.java & MyThread.java both examples for understanding

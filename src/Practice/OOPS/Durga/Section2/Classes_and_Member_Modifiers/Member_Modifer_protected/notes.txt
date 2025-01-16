@@ -1,0 +1,13 @@
+-> The most misunderstood modifier in java is protected.
+
+
+1) If a variable OR method() declared as protected, then we can access from anywhere with-in the package,
+                                        But
+   From outside of package we can access protected members only in child-classes.
+
+2)  protected = <default-modifier> + Kids
+
+***Note:
+------------
+3) Parent-class protected members, if we want to access from outside-package, then compulsory we should use-
+-child-Reference only, Parent-Reference(Runtime-Polymorphism) cannot be used to access protected-members from outside the class.

@@ -1,0 +1,26 @@
+Member-modifiers:
+------------------------
+Variables and Methods are members of class, so what modifiers we should use....let see below.
+
+(1) public members : "It means global-level"
+If we declare method() or variable as "public" then we can access those members from anywhere
+i.e. from inside/outside of class and packages.
+But the corresponding class should be public.
+
+(2) default members : "It means package-level"
+We can access default members only from same package, outside package we cannot access the members.
+If we are not taking access-modifier before methods() and variables, then those members are default-members.
+
+
+(3) private members : "It means class-level"
+We can access private members only with-in the same-class.
+Outside class, we cannot access private members.
+
+***) Note : Recommended modifier for variables is "private", to achieve "Data-Hiding".
+            Recommended modifier for methods is "public", so it can be used by multiple-classes.
+
+
+
+
+
+

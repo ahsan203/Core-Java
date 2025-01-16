@@ -1,0 +1,18 @@
+Anonymous-Inner Class :
+-----------------------
+We use Anonymous-Inner Classes with Interfaces to implement Interface methods without name as shown in below example :
+
+Runnable r = new Runnable
+{
+    public void run()
+    {
+        for(int i=0; i<10; i++)
+        {
+            sout(i);
+        }
+    }
+}
+
+So, here we are not creating an object for Runnable-Interface,
+Instead we have created an Anonymous-Inner class which implements Runnable Interface.
+

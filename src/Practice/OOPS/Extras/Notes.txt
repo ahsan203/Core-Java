@@ -1,0 +1,14 @@
+Interfaces vs classes :
+-----------------------
+
+Interfaces :-
+------------
+1) An Interface cannot implement another Interface as it cannot provide implementation of methods().
+2) But One Interface can extend multiple Interfaces.
+
+classes :-
+-----------
+1) A class can implements multiple Interfaces.
+2) But One class cannot extend multiple classes. As Multiple Inheritance of classes in java is not allowed.
+
+Refer Examples of Part1 & Part2

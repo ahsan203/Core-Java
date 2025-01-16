@@ -1,0 +1,7 @@
+Enum-Methods () :
+------------------
+                   1) values() : It will list-out all enum constants.
+
+                   2) ordinal() : It will specify "order" of constants in enums.
+                                  Step -1 : First get all values of enum using values()
+                                  Step-2 : Then on each enum object call ordinal()

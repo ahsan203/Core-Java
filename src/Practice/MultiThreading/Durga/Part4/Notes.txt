@@ -1,0 +1,31 @@
+Thread-Priorities:
+--------------------
+Priority-Range : 1-to-10
+                            1) Minimum-Priority : 1
+                            2) Normal-Priority : 5
+                            3) Maximum-Priority : 10
+
+    For Priorities Thread class define following constants:
+                                                            1) Thread.MIN_PRIORITY ----> 1
+                                                            2) Thread.NORM_PRIORITY ----> 5
+                                                            3) Thread.MAX_PRIORITY -----> 10
+
+1) Thread Scheduler will use priorities while allocating processor.
+2) The thread which have highest_priority will get chance first.
+3) If 2 threads have same priority, then we can't expect execution order. It depends on Thread Scheduler.
+
+
+Default-Priority :
+-------------------
+1) **********  Default-Priority of Main-Thread is always 5.
+2) ********** Default-Priority for all other threads, default-priority will be inherited from Parent-Thread to Child-Thread.
+              Whatever priority parent-thread has same priority its child-threads also have.
+
+
+Methods for Priority :
+----------------------- 1) getPriority();
+                        2) setPriority(int p); ----> p should be from 1-to-10
+
+****) Note : Some OS platforms don't provide support to Thread-Priorities.
+
+

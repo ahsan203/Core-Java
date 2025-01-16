@@ -1,0 +1,61 @@
+IO-Streams(java.io) :
+---------------------
+1) java.io has many Pre-defined classes for not only Reading/Writing to Files, but also
+   it also reads from Keyboard i.e. System.in
+                and
+   Writes to Console i.e. System.out
+
+2) Using this we can store and retrieve data from files from java programs....
+
+3) As we know that the values which we store inside "variables" & "objects" of the java program, will be temporarily
+   available till the execution of program, once execution completes the "variables" & "objects" memories will be
+   destroyed, and we loose the data. And we can use this values in future purpose.
+
+4) To overcome above problem we have to store the values of "variables" & "objects" inside Files permanently.
+   And by doing this we can use these values for future purpose.
+
+5) In the industry for storing small amount of data in files we use IO-Streams(java.io)...
+   But for storing large amount of data we use DB with the help of JDBC-API.
+
+
+Stream : Stream is a logical connection between Java-Program & File,
+         by which we can store and retrieve data from Java-Program to File vice-versa.
+
+Note : We have to create 2 separate streams for input and output.
+       For input, we say "InputStream".
+       For Output, we say "OutputStream".
+
+In java, we can send data in 2 types of streams  based on data f
+                                                                 1) Binary Streams
+                                                                 2) Character Streams
+
+
+Types of Streams :
+------------------
+1) Binary Stream :
+                    a) OutputStream : To write binary-data from java to File
+                    b) InputStream : To read binary-data from File to Java
+
+2) Character Stream :
+                      a) Writer : To write character-data from Java to File.
+                      b) Reader : To read character-data from File to Java.
+
+
+For writing & reading binary-data we have so many destination and sources.
+
+For Reading Binary-data the sources are ( Keyboard, Mouse, File, DB, Socket, DB, Socket, Object, Array, String, StringBuffer)
+For writing binary-data the destinations are ( Console, File, Socket, DB, Object, Array, String, StringBuffer)
+
+Based on above different sources and destinations we have many subclasses for InputStream and OutputStream.
+
+InputStream :
+                1) FileInputStream : In raw format, i.e. it will store in bytes.
+                2) DataInputStream : In primitive specific format
+                3) ObjectInputStream : Object format.
+                4) BufferedInputStream...... and many more.....
+
+OutputStream :
+                1) FileOutputStream : In raw format, i.e. in byte format
+                2) DataOutputStream : In Primitive data format.
+                3) ObjectOutputStream : In Object format.
+                4) BufferedOutputStream

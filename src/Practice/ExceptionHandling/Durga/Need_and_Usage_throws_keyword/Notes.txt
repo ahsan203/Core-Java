@@ -1,0 +1,8 @@
+throws-keyword :
+--------------------
+
+1) It is an alternative of try/catch.
+2) In between "throws" & "try/catch", try/catch is recommended.
+3) throws keyword is only recommended for "Checked-Exceptions".
+4) throws keyword not applicable for UnChecked-Exceptions.
+

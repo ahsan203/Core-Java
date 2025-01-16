@@ -1,0 +1,21 @@
+List.of():
+----------
+Creates an immutable list (cannot be modified).
+Part of Java 9+.
+Example:
+List<String> list = List.of("a", "b", "c");
+list.add("d"); // Throws UnsupportedOperationException
+
+
+Arrays.asList():
+------------------
+Creates a fixed-size list backed by an array.
+Part of Java 5+.
+
+List<String> list = Arrays.asList("a", "b", "c");
+list.set(0, "d"); // Works (modifies the array).
+list.add("e");    // Throws UnsupportedOperationException
+
+
+Key Difference: List.of() is immutable, while Arrays.asList() is fixed-size but mutable.
+

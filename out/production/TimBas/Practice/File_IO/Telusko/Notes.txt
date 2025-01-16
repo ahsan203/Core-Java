@@ -1,0 +1,29 @@
+For taking input from user in java we can use any 2 classes :
+                                                               1) BufferedReader
+                                                               2) Scanner
+
+
+1) InputStreamReader ip = new InputStreamReader(System.in);
+   BufferedReader br1 = new BufferedReader(ip);
+
+                OR
+    BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+
+2) Refer Scanner java program.... to understand Scanner class
+
+
+Note :
+-------
+1) Scanner class came after BufferedReader......
+2) In Scanner we have methods() to accept all primitive types including String, namely (nextInt(), nextDouble(), nextLine().....);
+3) In BufferedReader we have only one method i.e. readLine(), which accepts only String data.
+                            But
+    we can give primitive values also by using XXX.parseInt()..... like below.
+     ===>   int age = Integer.parseInt(br.readLine);......
+
+
+4) next() VS nextLine() :
+-------------------------
+1) next() :This method() takes tokens which comes before whiteSpace in the Buffer.
+2) nextLine() : This method() takes all tokens from the Buffer.
+3) Refer Next_VS_NextLine() java program...

@@ -1,0 +1,14 @@
+Arrays class utility methods :
+------------------------------
+All Arrays-class methods are static and they are :
+                                                    1) Arrays.toString()
+                                                    2) Arrays.sort(array[])
+                                                    3) Array.equal(first-array, second-array)
+                                                    4) Arrays.fill(array, 29)
+                                                    5) Arrays.copy(first-array,firstArray.length)
+                                                    6) Arrays.binarySearch(array[],element)
+
+
+
+Arrays in Java is considered as Objects......
+

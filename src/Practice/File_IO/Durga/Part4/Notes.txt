@@ -1,0 +1,27 @@
+PrintWriter :
+-------------
+1) For writing Character-data to File, we have 3 classes :
+                                                           a) FileWriter
+                                                           b) BufferedWriter
+                                                           c) PrintWriter
+ Note :Among all 3, "PrintWriter" is the best choice
+
+2) In PrintWriter we have 2 important methods which overcomes the problem of above 2 other classes.
+
+            1) pw.print(); ---> We can write any type of Primitive data directly to the File, including Strings as well.
+            2) pw.println(); ---> println() method helps to go for newLine.
+
+3) PrintWriter can directly communicate with File,
+                   OR
+   PrintWriter can communicate via Writer object.
+
+
+4) pw.write(100)  VS  pw.print(100) :
+------------------------------------
+                                        pw.write(100); ---> It will write d in file
+                                        pw.print(100) ----> It will write 100 in file
+
+5) The most enhanced reader class is "BufferedReader" class for Character-data.
+                        and
+   The most enhanced writer class is "PrintWriter" class for Character-data.
+

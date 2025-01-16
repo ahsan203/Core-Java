@@ -1,0 +1,4 @@
+Customized-Exception vs User-define Exceptions :
+-------------------------------------------------
+Customized Exceptions :
+The Exceptions which are defined by the Programmer, to meet the programming requirement is Customized Exception.

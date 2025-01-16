@@ -1,0 +1,21 @@
+Exception-Hierarchy:
+---------------------------------
+1) For all the Exceptions-&-Errors in java "Throwable-class" is the root class.
+2) There are 2 child classes of Throwable are "Excpetion" & "Error".
+
+3) Difference b/w Exception and Error:
+Exception : 1) Exceptions in Program can be recovered by programmer by using { try/catch OR throws }
+            2) Exceptions can be Checked and Unchecked.
+            3) Exception which are Unchecked will occur at Runtime, whereas Checked Exceptions occur at compile time.
+            4) They are defined in java.lang.Exception package.
+            5) Examples : FileNotFoundException, SQlException, IOException, NullPointerException.....
+
+Error : 1) Recovering from Error is not possible.
+        2) Error can be caused by then environment, in which the program is running.
+        3) Error is defined in java.lang.Error
+        4) Examples : java.lang.OutOfMemory....
+Both Error and Exception are child classes of Throwable class.
+
+link : https://www.geeksforgeeks.org/errors-v-s-exceptions-in-java/
+
+

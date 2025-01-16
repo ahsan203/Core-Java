@@ -1,0 +1,49 @@
+equals() :
+-----------
+1) We use equals() method to check equality of 2 objects.
+   obj1.equals(obj2);
+
+2) If our equals doesn't contain equals() method then Object-class equals() method will be executed.
+
+3) Note : As we know "==" operator means it is checking "Reference-comparison".
+                    and
+          ".equals()" means content comparison.
+
+4) So equals() method of Object-class is meant for "Reference-comparison/Address-comparison".
+
+5) Refer Example-1 to understand above points.
+
+6) Therefore equals() method of Object-class is meant for "Reference-comparison" but not "content-comparison".
+
+7) Based on our requirement we can override .equals() method for doing "content-comparison" of objects.
+
+8) Refer Example-2 java program, where we have overridden .equals() method for "Content-Comparison" of  2 objects.
+
+   Things to consider while overriding .equals() method  for "Content-Comparison" :
+
+             1) What is the meaning of equality i.e. whether we have to check only [equal-names] OR
+                                                                              only [equal-rollNumbers] OR
+                                                                              both [names & roll-num should be equal].
+
+             2) If we have different-classes types of objects our .equals() should not rise ClassCastException, i.e.
+                we have to handle "ClassCastException" to return false.
+
+             3) If we are passing null-argument, our.equals() method should not rise NullPointerException, i.e.
+                 we have to handle NullPointerException to return false.
+
+    Explanation : We may get "ClassCastException" when user try to compare equality of Heterogeneous objects.
+                  Example : sout(s1.equals("ahsan"));---> Here we are comparing Student-object with String-object.
+                                                and
+                  We may get "NullPointerException" when user tries to compare equality between object and null.
+                  Example : sout(s1.equals(null));---> Here we are comparing Student-object with null.
+
+9) Refer Example-3 java program, where we have modified Example-2 java program.
+   Refer Example-3 java program, for simplified version of .equals() method.
+
+10) We further simplified in Example4.
+
+11) We even further modified and simplified in Example5.
+
+12) We even more simplified in Example6.
+
+13) Among all Example-6 Approach is best and most recommended to use.

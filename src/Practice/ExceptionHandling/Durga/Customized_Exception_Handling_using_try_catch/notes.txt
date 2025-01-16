@@ -1,0 +1,9 @@
+try/catch:
+------------------
+try:
+-------------
+The code in which "Exception"  can occur should be taken inside try-block.
+
+catch():
+----------------
+The corresponding Handling code of the exception should be in catch() block.

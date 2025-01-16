@@ -1,0 +1,12 @@
+throw keyword:
+---------------
+
+1) Sometimes we can create Exception-Object explicitly and handover to JVM manually, for this we ue "throw" keyword.
+                throw new ArithmeticException("/ by zero")
+
+2) Hence the main objective of throw keyword is, to hand over our created Exception-Object to JVM manually.
+
+3) To create Customized Exception Object we use throw-keyword.
+
+4) Refer Case-2 example program.
+

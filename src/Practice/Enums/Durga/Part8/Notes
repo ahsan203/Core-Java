@@ -1,0 +1,13 @@
+
+
+1) We can use all Object-class methods with enum-objects also
+
+            Beer.KF.equals(KO);      (It is valid)
+
+            Beer.KF == Beer.KO       (It is valid)
+
+            Beer.KF.hashCode == Beer.KO.hashCode()     (It is valid)
+
+            Beer.KF.ordinal() > Beer.KO.ordinal()      (It is valid)
+
+            Beer.KF > Beer.KO        (It is Invalid)

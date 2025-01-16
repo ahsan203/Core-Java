@@ -1,0 +1,33 @@
+Function-@Functional-Interface :
+----------------------------------
+1) Function Functional-Interface is also same as Predicate-Interface with small difference.
+
+2) Function Interface takes "Type" along with "Return-Type" and has one SAM i.e. apply(T t) which returns accordingly which has provided.
+
+3) As we know Predicate will always return boolean
+                    But
+   Function Interface will return any "Return-Type" according to our need.
+
+   Refer Test1.java Program
+
+
+Program to Remove Spaces Present in the given String by using Function :
+-------------------------------------------------------------------------
+Refer Test2.java
+
+
+Program to count number of spaces present in given string :
+-------------------------------------------------------------
+Refer Test3.java
+
+
+Program to find Student Grade by using Function :
+--------------------------------------------------
+Refer Test4.java
+
+
+Program to find Total Monthly Salary of all Employees by using Function :
+                                   &
+Program to perform Salary Increment for Employees by using Predicate & Function
+--------------------------------------------------------------------------------
+Refer Test5.java

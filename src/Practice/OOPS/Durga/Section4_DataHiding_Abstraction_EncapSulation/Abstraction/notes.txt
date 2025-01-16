@@ -1,0 +1,9 @@
+Abstraction:
+-------------------
+
+***) Note : As we know that highly recommended for variables is private.
+
+1) Hiding internal-Implementation of the program services is Abstraction.
+
+2) By using Interface we can achieve Abstraction in java.
+

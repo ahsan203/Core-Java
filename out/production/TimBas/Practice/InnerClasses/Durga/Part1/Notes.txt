@@ -1,0 +1,46 @@
+Notes :
+----------
+1) There are 4 types of Inner-Classes:
+                                         1) Normal OR Regular Inner Class
+                                         2) Method Local Inner Class
+                                         3) Anonymous Inner Class
+                                         4) static Nested Class
+
+ Example : "Map-Interface" has "Entry-Interface" inside it.
+
+2) When we compile Regular Inner Class, we will get two ".class-files":
+                                                                    1) Outer.class
+                                                                    2) Outer$Inner.class
+
+3) We cannot touch Inner-Class-Object directly, we have to first create Outer-Class-Object.
+  Then we can touch Inner-Class-Object with the help of Outer-Class-Object.
+
+4) Inside Inner-Class we cannot declare any "static-members". Hence, we can't declare main-method inside Inner-Class,
+   And we can't run Inner-Class directly.
+
+5) Case-1 : Accessing Inner-Class code from "static-area" of Outer-Class :
+-------------------------------------------------------------------------
+--> Refer Outer-2 java program.
+                                1) First we have to create Outer2-Class object.
+                                2) By using Outer2-Class Object we have to create Inner2-Class Object.
+                                3) By using Inner-2 Class Object we can access Inner-Class code.
+
+6) Case-2 : Accessing Inner-Class code from "Instance-area" of Outer-Class :
+-----------------------------------------------------------------------------
+---> Refer Outer-3 java program :
+                                    1) Directly we can create Inner-Clas object in Outer-Class Instance-Method.
+
+
+7) Case-3 : Accessing Inner-Class code from outside Outer-Class :
+----------------------------------------------------------------------
+---> Refer Outer-4-and-Test-1 java Programs:
+
+
+Conclusion :
+============
+
+Accessing Inner-class members inside Outer-class:
+=================================================
+1) You can directly access inner class members in the instance area of the outer class. (Refer Outer-3 java program)
+2) In the static area of the outer class, you need to first create an instance of the outer class,-
+   - then create an instance of the inner class to access its members. (Refer Outer-2 java program)

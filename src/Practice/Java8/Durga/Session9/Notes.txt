@@ -1,0 +1,7 @@
+
+Supplier Functional Interface :
+---------------------------------------
+1) It has SAM i.e. get() which doesn't take any input-parameter but always Return type, which we provide.
+
+
+        public <T> get();

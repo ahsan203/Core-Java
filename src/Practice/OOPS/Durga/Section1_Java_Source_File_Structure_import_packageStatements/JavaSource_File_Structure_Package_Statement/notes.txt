@@ -1,0 +1,14 @@
+->What is a package?
+ans) A group of related classes and Interfaces group together into separate unit.
+
+Examples of packages...
+1)java.sql
+2)java.util
+3)java.lang
+4)java.io
+
+As we have Date class present in both packages(java.sql & java.util), with the help of packages we can differentiate Date
+-class based on packages.
+
+Every class in java is a part of some package.
+And it is highly recommended to use packages while building an application in real time.

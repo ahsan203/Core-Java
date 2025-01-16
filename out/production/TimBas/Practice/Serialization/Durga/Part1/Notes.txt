@@ -1,0 +1,52 @@
+Serialization :
+---------------
+1) The process of writing an "object"  to a file is called "Serialization".
+
+2) We have a special class called as "ObjectOutputStream" to achieve "Serialization" process.
+
+3) ObjectOutputStream class takes FileOutputStream object as parameter.
+    Example : ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName));
+
+4) ObjectOutputStream has a method called writeObject(object-1); to write object to file.
+
+
+DeSerialization :
+------------------
+1) The process of reading object from the file is called "DeSerialization",
+   But strictly speaking, it is a process converting an object from either file-supported form into java-supported form.
+
+2) We have special class for DeSerialization process namely "ObjectInputStream" with "FileInputStream".
+
+3) ObjectInputStream has a method() called readObject(object-1); for reading an object form file.
+
+***) Notes:
+--------------
+     Note-1 : The object which are Serializing its corresponding class must compulsorily implement "Serializable" interface.
+                                                and
+     Note-2 : "Serializable" interface is "Marker-Interface", hence we need not have to override any methods()....
+
+
+Transient :
+-------------
+1) "transient" modifier applicable only for "instance-variables",
+    but not for "static-variables", "final-variables", methods() and classes.
+
+2) If we want to hide original-value of variable to be stored into file while Serialization then we use transient keyword
+   for variable.
+
+
+transient vs static :
+----------------------
+1) As we know static-variables are not part of objects, hence we cannot "Serialize" static-variables.
+
+
+
+
+
+
+
+
+
+
+
+

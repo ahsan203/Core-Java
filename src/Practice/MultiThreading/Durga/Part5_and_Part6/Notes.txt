@@ -1,0 +1,58 @@
+Preventing thread from Execution temporarily:
+---------------------------------------------
+                                             1) yield()
+                                             2) join()
+                                             3) sleep()
+We can prevent "thread" execution temporarily by using above 3 methods.
+
+(1) yield() :
+-------------
+1) yield() pause the current-executing thread, to give the chance of waiting threads of same priority,
+   If there is no waiting threads OR all waiting threads having low priority then same thread can continue its execution.
+2) If multiple threads are waiting with same priority, then which waiting thread will get a chance, we can't expect.
+    As it depends on Thread-Scheduler.
+3) The thread which is "yielded", when it will get a chance next, it will depend on Thread-Scheduler, and we can't expect
+   - exactly.
+4) prototype---> public static native void yield();
+5) Some OS platforms won't provide proper support for yield().
+
+
+(2) join() :
+-------------
+1) If a thread wants to wait until completing some other thread, then we should go for join() method.
+2) Eg: If a thread-t1 wants to wait until completion of thread-t2, then thread-t1 has to call t2.join().
+       If thread-t1 executes t2.join(), then immediately thread-t1 will enter into waiting-state until thread-t2 completes.
+       Once thread-t2 completes, then thread-t1 can continue its execution.
+3)  There are 3 overloaded join() methods :
+                                            1) join()
+                                            2) join(long m/s)
+                                            3) join(long m/s, int n/s)
+4) Every join() method throws "InterruptedException".
+
+5) Refer Example2, Example3, Example4 & Example5 Java Programs,
+   Example2 : In this Main-thread is waiting until completion of Child-Thread.
+   Example3 : In this Child Thread is waiting until completion of Main-Thread.
+   Example4 : In this both Main-thread & Child-Thread both are waiting for each-other to complete,
+              Which leads to "DeadLock" state.
+   Example5 : In this program, Main-Thread has called join() method on itself, So it went into "DeadLock" state.
+
+
+(3) sleep() :
+--------------
+1) If a thread don't want to perform for some time we use sleep() method.
+2) 2 overloaded sleep() methods :
+                                    1) sleep(long m/s)
+                                    2) sleep(long m/s, int n/s)
+3) Every sleep() method throws "InterruptedException".
+4) Refer SlideRotator.java, java program.
+
+-> Interruption of threads:
+---------------------------
+1) A thread can interrupt a sleeping-&-waiting thread, by using interrupt() method of Thread-class.
+2) Refer Example6 java program, where it shows how Main-thread interrupts Child-thread.
+3) Note : Whenever we are calling interrupt() method, if target-thread is not in sleeping state OR waiting-state,
+          then there is no impact of interrupt() call immediately.
+          interrupt call will be waited until target thread entered into sleeping OR waiting state.
+          If the target thread entered into waiting OR sleeping state then immediately interrupt call will interrupt target thread.
+          Refer Example7 java program, in this program interrupt() method call waited until Child-thread completes for loop 500 times.
+          and when it saw sleep() it interrupted.

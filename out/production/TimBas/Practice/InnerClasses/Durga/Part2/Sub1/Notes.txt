@@ -1,0 +1,38 @@
+Normal OR Regular Inner Class :
+--------------------------------
+1) From Normal (OR) Regular Inner-Class, we can access both static-and-Non-Static members of Outer-Class directly.
+    Refer Outer-1 java program.
+
+2) Within the Inner-Class, "this" always refers current-Inner-Class object.
+   If we want to refer, current Outer-Class object we have to use "Outer-ClassName.this"
+   Refer Outer-2 java program.
+
+3) Modifiers applicable for Outer-Class : public, default, final, abstract, strictfp
+   Modifiers applicable for Inner-Class : public, default, final, abstract, strictfp, private, protected, static.
+
+4) Nesting of Inner-Classes :
+------------------------------
+1) Inside Inner-Class, we can declare another Inner-Class, i.e. Nesting of Inner-Classes is possible.
+2) Refer A java program.
+
+
+
+All Conclusion:
+================
+
+Accessing Inner-class members inside Outer-class:
+=================================================
+1) You can directly access inner class members in the instance area of the outer class.
+2) In the static area of the outer class, you need to first create an instance of the outer class,-
+   - then create an instance of the inner class to access its members.
+
+Accessing Outer-class members inside Inner-class:
+=================================================
+3) You can directly access both static and instance members of the outer class from within the inner class.
+
+4) Inner classes cannot have static variables or static methods, except for static final variables (constants).
+
+5) Within the Inner-Class, "this" always refers current-Inner-Class object.
+   If we want to refer, current Outer-Class object we have to use "Outer-ClassName.this". (Refer Outer-2 java program).
+
+

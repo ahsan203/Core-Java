@@ -1,0 +1,5 @@
+try with multiple catch blocks :
+----------------------------------
+
+1) try with multiple catch-block is highly recommended for good programming practice.
+2) In try with multiple catch blocks then catch-block order is very important.

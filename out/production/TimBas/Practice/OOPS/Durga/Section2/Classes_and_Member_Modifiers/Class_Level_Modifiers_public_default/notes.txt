@@ -1,0 +1,15 @@
+->*** Whenever we are creating any class in java we have to specify access modifier to class like below:
+
+1) public class Test { } => public means we can access this class from anywhere i.e. outside OR inside of te package.
+
+2) class Test { } => default means (no-modifier) and default classes can be only be accessed from within the package only.
+
+3) abstract class Test{ } => abstract class objects cannot be created.
+
+4) final class Test{ } => final class cannot have any child classes.
+
+5) And if suppose we have inner-Classes then we can use private, protected & static modifiers.
+
+6) But for top-level-classes modifiers applicable are public, default, final & abstract.
+
+

@@ -1,0 +1,24 @@
+Armstrong :
+-------------
+1) 23 = (2^2) + (3^2)
+      = 4 + 9
+     23 = 13 ( "This number is not an Armstrong " )
+
+
+2) 153 = (1^3) + (5^3) + (3^3)
+       = 1 + 125 + 27
+   153 = 153            (" 153 is an Armstrong number ")
+
+
+
+   Logic :
+            Step-1 : Find the length of the number .
+
+            Step-2 :
+                    1) Do modulo operator to capture remainder.
+                    2) initialize local mul-variable to 1 and start for-loop till the length of number
+                       and multiply mul-variable with remainder.
+
+                    3) Intialize armstrong-var=0, and add mul.......
+                    ......
+

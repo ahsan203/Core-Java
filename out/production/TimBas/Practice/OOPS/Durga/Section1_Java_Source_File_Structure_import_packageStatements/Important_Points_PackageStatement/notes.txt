@@ -1,0 +1,2 @@
+Inside any Java Program atmost one package is allowed.
+If we write 2 package names then we will get Compile time error.

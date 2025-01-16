@@ -1,0 +1,7 @@
+finally vs System.exit(0)
+-----------------------------------
+
+System.exit(0) : By using System.exit(0) JVM will get shutdown and no finally block will get no-chance to execute.
+
+zero means : Normal termination
+no-zero means : Abnoraml Termination

@@ -1,0 +1,15 @@
+
+Comparator interface :
+-------------------------
+1) Comparator is @Functional Interface which contains only SAM i.e. compare() method.
+   Therefore, we can use Lambda-Expression.
+
+2) As we know Comparator-Interface is used for Customized Sorting of objects.
+
+3) compare() method :
+---------------------
+                        public int compare(Object obj1, Object obj2);
+
+             Returns -1 : If obj1 has to come before obj2.
+             Returns +1 : If obj1 has to come after obj2.
+             Returns 0 : If both obj1 & obj2 are equal.
